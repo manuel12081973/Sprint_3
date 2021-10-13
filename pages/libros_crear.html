@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../assets/css/styleP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libros Ingresar</title>
+  </head>
+
+   
+
+  <body >
+    <header class="header">
+      <h1>"A leer se dijo"</h1>
+      <ul class="menu">       
+        <li><a href="../index.html">Salir</a></li> 
+        <li><a href="lectores_editar.html">Editar usuario</a></li>
+        <li><a href="libros_crear.html">Registro de libros</a></li>
+        <li><a href="libros_editar.html">Editar registro de libro</a></li>            
+        <li><a href="Intercambio_libros.html">Intercambio de libros</a></li>                      
+      </ul>
+      <h2>Ingreso de libros para intercambio</h2>
+    </header>
+    <section class="e">
+      <form action="Intercambio_libros.html" method="POST" autocomplete="off">
+        <input type="hidden" name="codigo" id="codigo" value="500" />
+  
+        <fieldset>
+          <legend>REGISTRALO AQUI:</legend>
+          <br />
+          <label for="nombre">Título del Libro:</label><br />
+          <input class="input"
+            type="text"
+            name="nombre"
+            id="nombre"
+            size="60"
+            placeholder="Ingrese Titulo"
+            tabindex="1"
+            required
+          />
+          <br /><br />
+  
+          <label for="autor">Autor:</label><br />
+          <input class="input"
+            type="text"
+            name="autor"
+            id="autor"
+            size="60"
+            placeholder="Ingrese autor"
+            tabindex="2"
+            required
+          />
+          <br /><br />
+          <label for="categoria">Categorias:</label><br>
+          <select name="categoria" id="categoria" tabindex="3">
+            <option value="novela">Novelas</option>
+            <option value="cienciaf">Ciencia Ficción</option>
+            <option value="biografia">Biografias</option>
+            <option value="cientificos">Científicos</option>
+          </select>
+          <br /><br />
+  
+          <label>Estado del Libro:</label><br />
+          <input 
+            type="checkbox"
+            name="estado"
+            id="bueno"
+            value="bueno"
+            tabindex="4"
+          />
+          <label for="bueno">Bueno</label><br />
+          <input
+            type="checkbox"
+            name="estado"
+            id="regular"
+            value="regular"
+            tabindex="5"
+          />
+          <label for="regular">Regular</label><br />
+          <input
+            type="checkbox"
+            name="estado"
+            id="malo"
+            value="malo"
+            tabindex="6"
+          />
+          <label for="malo">Malo</label>
+          <br /><br />
+          <label for="observaciones">Observaciones</label>
+          <br />
+          <textarea class="input textArea"
+            name="observaciones"
+            id="observaciones"
+            cols="45"
+            rows="8"
+            tabindex="7"
+          ></textarea>
+          <br /><br />
+  
+          <button class="btn-1" type="submit">Ingresar</button>
+          <button class="btn-1" type="reset">Cancelar</button>
+        </fieldset>
+      </form>
+    </section>
+    
+    
+    <footer class="footer">
+      contacto: ma_sanchez12@yahoo.es   
+  </footer>
+  </body>
+</html>

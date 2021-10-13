@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styleP.css">
+    <title>Libros Editar</title>
+  </head>
+   
+  <body >
+    <header class="header">
+      <h1>"A leer se dijo"</h1>
+      <h2 align="center">Edición de libros</h2>
+      <ul class="menu">       
+        <li><a href="../index.html">Salir</a></li> 
+        <li><a href="lectores_editar.html">Editar usuario</a></li>
+        <li><a href="libros_crear.html">Registro de libros</a></li>
+        <li><a href="libros_editar.html">Editar registro de libro</a></li>            
+        <li><a href="Intercambio_libros.html">Intercambio de libros</a></li>                      
+      </ul>
+    </header>
+    <section class="e">
+      
+      <fieldset>
+        <legend>DATOS BASICOS:</legend>
+        <br>
+        <form action="Intercambio_libros.html" method="POST" autocomplete="off">
+          <label for="titulo">Título del Libro:</label><br>
+          <input class="input"
+            type="text"
+            name="titulo"
+            id="titulo"
+            placeholder="Digite titulo"
+            size="60"
+            tabindex="1"
+            required
+            value=" "
+          />
+          <br /><br>
+          <label for="cedula">No. Identificación:</label><br>
+          <input class="input"
+            type="number"
+            name="cedula"
+            id="cedula"
+            placeholder="Digite identificación"
+            size="60"
+            tabindex="2"
+            required
+            value=" "
+          />
+          <br><br>
+          
+          <button class="btn-1" type="submit">Actualizar</button>
+          <button class="btn-1" type="reset">Eliminar</button>
+          </form>
+      </fieldset>
+    </section>
+    <footer class="footer">
+      contacto: ma_sanchez12@yahoo.es   
+  </footer>
+  </body>
+</html>

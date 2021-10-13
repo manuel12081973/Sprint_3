@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styleP.css">
+    <title>Inicio de Sesion</title>
+</head>
+
+<body > 
+  <header class="header">
+    <h1>"A leer se dijo"</h1>
+    <ul class="menu">       
+      <li><a href="../index.html">Inicio</a></li> 
+      <li><a href="Inicio_sesion.html">Iniciar sesion</a></li>
+      <li><a href="lectores_crear.html">Crear cuenta</a></li>        
+      <li><a href="libros_admin.html">Biblioteca disponible</a></li>                      
+    </ul>
+  </header> 
+     
+<section class="e"> 
+        
+    <fieldset>
+        <legend>INICIO DE SESIÓN</legend>
+         
+        <form action="menu_principal.html" method="POST">
+           <label for="">Lector: </label><br />
+           <input class="input"
+             type="text"
+             id="lector"
+             name="lector"
+             tabindex="1"
+             placeholder="Ingrese usuario"
+             size="60"
+             required
+           />
+           <br /><br />
+ 
+           <label for="clave">Contraseña: </label><br />
+           <input class="input"
+             type="password"
+             name="clave"
+             id="clave"
+             tabindex="2"
+             placeholder="Digite contraseña"
+             size="60"
+             required
+           />
+           <br /><br />
+           <button class="btn-1" type="submit" tabindex="3">Iniciar</button>
+           <button onclick="location.href='../pages/lectores_crear.html'" class="btn-1" type="button" tabindex="3">Crear cuenta</button>                   
+                 
+       </form>
+       </fieldset>
+</section>
+
+<footer class="footer">
+  contacto: ma_sanchez12@yahoo.es   
+</footer>   
+     
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styleP.css">
+    <title>Lectores Admin</title>
+  </head>
+  <body >
+    <header class="header">
+      <h1>"A leer se dijo"</h1>
+      <img class="image" src="../assets/img/imagen libro en las manos.jpg" alt="Leer es a la mente lo que el ejercicio es al cuerpo">
+      <br/> <br/> <br/>
+      <ul class="menu">       
+        <li><a href="../index.html">Inicio</a></li> 
+        <li><a href="Inicio_sesion.html">Iniciar sesion</a></li>
+        <li><a href="lectores_crear.html">Crear cuenta</a></li>
+        <li><a href="libros_admin.html">Biblioteca disponible</a></li>
+                
+      </ul>
+      
+    </header> <hr>
+      
+
+    <section class="e">
+      <h2>Registro de usuario</h2>
+      <fieldset>
+        <legend>DATOS PERSONALES</legend>
+        <form action="Inicio_sesion.html" method="POST" autocomplete="off">
+         
+          <label for="tipodoc">Tipo de Documento:</label><br />
+            <select name="tipodoc" id="tipodoc">
+            <option value="1">Tarjeta de Identidad</option>
+            <option value="2">Cédula de Ciudadania</option>
+            <option value="3">Cédula de Extranjeria</option>
+            <option value="4">Pasaporte</option>
+          </select>
+          <br /><br />
+
+          <label for="identificación">No. Identificación:</label><br />
+          <input class="input"
+            type="number"
+            name="identificación"
+            id="identificación"
+            placeholder=" "
+            tabindex="2"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="nombrec">Nombre Completo:</label><br />
+          <input class="input"
+            type="text"
+            name="nombrec"
+            id="nombrec"
+            placeholder="Nombre/Apellidos"
+            tabindex="3"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="">Dirección:</label><br />
+          <textarea class="input textArea"
+            name="direccion"
+            id="direccion"
+            cols="46"
+            rows="3"
+            tabindex="4"
+            required
+          ></textarea>
+          <br /><br />
+
+          <label for="celular">Teléfono / Celular:</label><br />
+          <input class="input"
+            type="number"
+            name="celular"
+            id="celular"
+            placeholder="número telefónico"
+            tabindex="5"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="correo">Email:</label><br />
+          <input class="input"
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Ingrese el correo"
+            tabindex="6"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="ciudad">Ciudad:</label><br />
+          <input class="input"
+            type="text"
+            name="ciudad"
+            id="ciudad"
+            placeholder=" "
+            tabindex="7"
+            size="60"
+            required
+          />
+          <br><br>
+          <button class="btn-1" type="submit">Guardar</button>
+          <button class="btn-1" type="reset">Cancelar</button><br>
+        </form>
+      </fieldset>
+    </section>
+    <footer>
+      contacto: ma_sanchez12@yahoo.es   
+  </footer class="footer">
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styleP.css">
+    <title>Lectores Editar</title>
+  </head>
+
+   
+
+  <body >
+    <header class="header">
+      <h1>"A leer se dijo"</h1>
+      <ul class="menu">       
+        <li><a href="../index.html">Salir</a></li> 
+        <li><a href="lectores_editar.html">Editar usuario</a></li>
+        <li><a href="libros_crear.html">Registro de libros</a></li>
+        <li><a href="libros_editar.html">Editar registro de libro</a></li>            
+        <li><a href="Intercambio_libros.html">Intercambio de libros</a></li>                      
+      </ul>
+      <img class="image" src="../assets/img/imagen niña leyendo.jpg" alt="">
+    </header> <hr>
+    <section class="e">
+      <h2>Edición lectores</h2>
+      <fieldset>
+        <legend>DATOS DEL LECTOR</legend>
+
+        <form action="lectores_admin.html" method="POST" autocomplete="off">
+          <label for="">No. de Identificación:</label><br />
+          <input class="input"
+            type="text"
+            name="cedula"
+            id="cedula"
+            placeholder="Digite identificación"
+            size="60"
+            tabindex="1"
+            required
+          />
+          <br><br>
+
+          <button class="btn-1" type="submit">Guardar</button>
+          <button class="btn-1" type="reset">Cancelar</button>
+        </form>
+      </fieldset>
+    </section>
+    <footer>
+      contacto: ma_sanchez12@yahoo.es   
+  </footer class="footer">
+  </body>
+</html>
